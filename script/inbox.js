@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const fetchInboxData = async () => {
         try {
-            const response = await fetch('https://my-json-server.typicode.com/idrissiddiq/dummyAPI/inboxList'); // Ganti dengan URL API yang sesuai
+            const response = await fetch('https://my-json-server.typicode.com/idrissiddiq/Simpul-FE-Challenge/inboxList'); // Ganti dengan URL API yang sesuai
             const data = await response.json();
             
             data.forEach(item => {
@@ -83,7 +83,7 @@ const showChatBox = async (item) => {
     
     chatHistory.innerHTML = '';   
     try {
-        const response = await fetch('https://my-json-server.typicode.com/idrissiddiq/dummyAPI/inboxDetail/' + item.id); // Ganti dengan URL API yang sesuai
+        const response = await fetch('https://my-json-server.typicode.com/idrissiddiq/Simpul-FE-Challenge/inboxDetail/' + item.id); // Ganti dengan URL API yang sesuai
         const data = await response.json();
 
         // Render chat history
