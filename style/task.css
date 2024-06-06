@@ -1,0 +1,251 @@
+.task-field {
+    width: 734px;
+    height: 737px;
+    background-color: white;    
+    display: none; 
+    position: absolute;
+    bottom: 90px;
+    right: 20px;
+    border-radius: 10px;
+    overflow-y: auto;
+}
+.task-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: white;    
+}
+.new-task-button {    
+    width: 101px;
+    height: 35px;
+    background-color: #2F80ED;
+    color: white;    
+    font-size: 14px;   
+    font-family: 'Lato'; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.dropdown-container {
+    width: 118.55px;
+    height: 40px;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    padding: 10px;
+    border: 1px solid #828282;
+    border-radius: 5px;    
+}
+.dropdown-text {
+    display: inline-block;  
+    font-size: 14px;   
+    font-family: 'Lato';
+    color: #4F4F4F;   
+}
+.dropdown i {
+    font-size: 14px;
+    color: #555;
+}
+.dropdown-options {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    border: 1px solid #ddd;
+    width: 100%;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+.dropdown-option {    
+    cursor: pointer;
+}
+.dropdown-option:hover {
+    background-color: #f1f1f1;
+}
+.new-task-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.task-list {
+    padding: 10px;    
+}
+.task-item {
+    padding: 10px;
+    border-bottom: 1px solid #828282;
+    display: block;        
+}
+.task-details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-items: center;
+}
+.task-title {
+    width: 336px;    
+    font-weight: bold;
+    margin-left: 10px;
+    color: #4F4F4F;
+    font-family: 'Lato';
+}
+.task-title.completed {
+    text-decoration: line-through;
+}
+.task-checkbox {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #828282;
+    border-radius: 3px;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+}
+.task-checkbox:checked::before {
+    content: '✓';
+    color: #828282; 
+    position: absolute;
+    left: 3px;
+    top: -2px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.task-checkbox:checked {
+    background-color: white; 
+    border-color: #828282;
+}
+.task-due {
+    margin-left: auto;
+    color: #EB5757;
+    font-family: 'Lato';
+}
+.task-date {
+    margin-left: 10px;
+    color: #4F4F4F;
+    font-family: 'Lato';
+}
+.task-description {
+    margin-left: 40px;
+    font-family: 'Lato';
+    color: #4F4F4F;
+    display: none;  
+}
+.expand-icon {
+    width: 20px;
+    height: 20px;
+    padding: 20px;
+    cursor: pointer;
+    color: #4F4F4F;
+}
+.task-option-icon {
+    width: 20px;
+    height: 20px;
+    padding-bottom: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    font-family: 'Lato';    
+    color: #828282;
+}
+.empty-icon{
+    color: #828282;
+    padding-right: 20px;
+}
+.filled-icon{
+    color: #2F80ED;
+    padding-right: 20px;
+}
+.task-date-input{
+    width: 193px;
+    height: 40px;
+    font-family: 'Lato';    
+    color: #828282;
+    font-size: 16px;
+    border-radius: 5px;    
+    border: 1px solid #828282;
+    padding-left: 20px;
+}
+.task-options-icon {
+    position: absolute;    
+    right: -20px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+.task-options-menu {
+    display: none;
+    position: absolute;
+    width: 60px;
+    font-size: 16px;    
+    right: 20px;
+    font-family: 'Lato';
+    text-align: center;
+    color: #2F80ED;
+    background-color: white;
+    border: 1px solid #BDBDBD;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    list-style-type: none;
+    padding: 0;
+    z-index: 10;
+    cursor: pointer;
+}
+.task-options-delete {   
+    color: #EB5757;
+}
+.task-options-menu li {
+    list-style-type: none;
+    border-bottom: 1px solid #BDBDBD;
+    padding: 5px 0;
+    text-align: center;
+}
+.bookmark-section {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    position: relative; /* Ensure dropdown is positioned relative to this element */
+}
+
+.bookmark-icon {
+    font-size: 20px;    
+    cursor: pointer;
+    position: relative;
+}
+
+.bookmark-dropdown {
+    display: none;
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ddd;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    list-style-type: none;
+    padding: 10px;
+    z-index: 2;
+    top: 25px; /* Adjust as necessary */
+    left: 0;   /* Align dropdown directly below the icon */
+}
+
+.bookmark-dropdown li {
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.bookmark-dropdown li:hover {
+    background-color: #f1f1f1;
+}
+
+.bookmark-item {
+    padding: 10px;
+    font-size: 14px;
+    color: #4F4F4F;
+    margin-left: 20px;    
+    border-radius: 5px;
+}
+.bookmark-option{
+    margin: 10px;
+}
