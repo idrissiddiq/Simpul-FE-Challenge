@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const fetchTaskData = async () => {
         try {
-            const response = await fetch('https://my-json-server.typicode.com/idrissiddiq/dummyAPI/taskList');
+            const response = await fetch('https://my-json-server.typicode.com/idrissiddiq/Simpul-FE-Challenge/taskList');
             const data = await response.json();
             
             data.forEach(item => {
